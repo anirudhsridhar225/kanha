@@ -42,7 +42,7 @@ export default function LandingPage({ featuredCategories, featuredProducts, auth
     return (
         <>
             <Head title="Kanha Furniture - Quality Furniture for Every Home" />
-            
+
             <div className="min-h-screen bg-gray-50">
                 {/* Header */}
                 <header className="bg-white shadow-sm">
@@ -54,7 +54,7 @@ export default function LandingPage({ featuredCategories, featuredProducts, auth
                                 </Link>
                                 <span className="ml-2 text-sm text-gray-500">Quality • Comfort • Style</span>
                             </div>
-                            
+
                             <nav className="hidden md:flex items-center space-x-8">
                                 <Link href="/products" className="text-gray-700 hover:text-blue-600 font-medium">
                                     All Products
@@ -104,13 +104,13 @@ export default function LandingPage({ featuredCategories, featuredProducts, auth
                                 Discover our collection of high-quality, affordable furniture designed to make your space beautiful and functional.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link 
+                                <Link
                                     href="/products"
                                     className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
                                 >
                                     Shop Now
                                 </Link>
-                                <Link 
+                                <Link
                                     href="/categories"
                                     className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors"
                                 >
@@ -119,7 +119,7 @@ export default function LandingPage({ featuredCategories, featuredProducts, auth
                             </div>
                         </div>
                     </div>
-                    
+
                     {/* Decorative Elements */}
                     <div className="absolute bottom-0 left-0 right-0">
                         <svg className="w-full h-16 text-gray-50" fill="currentColor" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -142,7 +142,7 @@ export default function LandingPage({ featuredCategories, featuredProducts, auth
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {featuredCategories.map((category) => (
-                                <Link 
+                                <Link
                                     key={category.id}
                                     href={`/categories/${category.slug}`}
                                     className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden"
@@ -191,7 +191,7 @@ export default function LandingPage({ featuredCategories, featuredProducts, auth
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                             {featuredProducts.map((product) => (
-                                <Link 
+                                <Link
                                     key={product.id}
                                     href={`/products/${product.slug}`}
                                     className="group bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-shadow"
@@ -234,7 +234,7 @@ export default function LandingPage({ featuredCategories, featuredProducts, auth
                         </div>
 
                         <div className="text-center mt-12">
-                            <Link 
+                            <Link
                                 href="/products"
                                 className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
                             >
@@ -263,7 +263,7 @@ export default function LandingPage({ featuredCategories, featuredProducts, auth
                                     High-quality materials and craftsmanship that lasts for years
                                 </p>
                             </div>
-                            
+
                             <div className="text-center">
                                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span className="text-2xl">💰</span>
@@ -273,7 +273,7 @@ export default function LandingPage({ featuredCategories, featuredProducts, auth
                                     Best value for money with frequent sales and discounts
                                 </p>
                             </div>
-                            
+
                             <div className="text-center">
                                 <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span className="text-2xl">🚚</span>
@@ -297,7 +297,7 @@ export default function LandingPage({ featuredCategories, featuredProducts, auth
                                     Quality furniture for every home. Transform your space with our premium collection.
                                 </p>
                             </div>
-                            
+
                             <div>
                                 <h4 className="font-semibold mb-4">Quick Links</h4>
                                 <div className="space-y-2">
@@ -306,14 +306,14 @@ export default function LandingPage({ featuredCategories, featuredProducts, auth
                                     <Link href="/about" className="block text-gray-400 hover:text-white">About Us</Link>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <h4 className="font-semibold mb-4">Categories</h4>
                                 <div className="space-y-2">
                                     {featuredCategories.slice(0, 4).map((category) => (
-                                        <Link 
+                                        <Link
                                             key={category.id}
-                                            href={`/categories/${category.slug}`} 
+                                            href={`/categories/${category.slug}`}
                                             className="block text-gray-400 hover:text-white"
                                         >
                                             {category.name}
@@ -321,7 +321,7 @@ export default function LandingPage({ featuredCategories, featuredProducts, auth
                                     ))}
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <h4 className="font-semibold mb-4">Contact Info</h4>
                                 <div className="space-y-2 text-gray-400">
@@ -331,7 +331,7 @@ export default function LandingPage({ featuredCategories, featuredProducts, auth
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                             <p>&copy; 2025 Kanha Furniture. All rights reserved.</p>
                         </div>
